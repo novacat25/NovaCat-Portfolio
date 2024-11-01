@@ -1,9 +1,18 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image"
+import React from "react"
 
-//TODO: on mobile device, make it smaller...?
-export const Logo = () => {
+type Props = {
+  isMobile?: boolean
+}
+
+export const Logo = ({ isMobile = false }: Props) => {
   return (
-    <Image src="/logo.png" width="187" height="61" alt="Logo" priority />
+    <Image
+      src="/logo.png"
+      width={isMobile ? "138" : "187"}
+      height={isMobile ? "41" : "61"}
+      alt="Logo"
+      priority
+    />
   )
 }
