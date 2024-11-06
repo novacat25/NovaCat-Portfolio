@@ -6,7 +6,7 @@ import React from 'react'
 export const Header = () => {
   const pc = () => (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ px: 7.5, py: 2, color: colors.header.main, backgroundColor: colors.header.background, boxShadow: 3 }}>
+      <AppBar position="fixed" sx={{ px: 7.5, py: 2, color: colors.header.main, backgroundColor: colors.header.background, boxShadow: 3 }}>
           <Box display="flex" justifyContent="space-between">
             <Logo />  
             {/* TODO: Make these as component tsx files */}
