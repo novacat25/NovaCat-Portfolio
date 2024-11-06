@@ -3,5 +3,5 @@ export default function Home() {
     <div className="h-dvh">
       An empty page.
     </div>
-  );
+  )
 }
