@@ -4,13 +4,14 @@ import React from 'react'
 import Link from 'next/link'
 
 export const Footer = () => {
-
-  return (
+  const pc = () => (
     <Box display="flex" gap={1} alignContent="center" justifySelf="right" sx={{ px: 7.5, py: 3 }}>
-        <Link href="https://github.com/novacat25" target="_blank">
-         <GitHubIcon />
-        </Link>
+      <Link href="https://github.com/novacat25" target="_blank">
+      <GitHubIcon />
+      </Link>
       <Typography>© NovaCat 2024 All rights reserved.</Typography>
     </Box>
   )
+
+  return pc()
 }
