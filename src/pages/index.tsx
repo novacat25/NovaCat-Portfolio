@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="hh-full">
+    <div className="h-dvh">
       An empty page.
     </div>
   );
