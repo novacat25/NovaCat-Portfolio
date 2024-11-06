@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 type Props = {
@@ -7,12 +8,14 @@ type Props = {
 
 export const Logo = ({ isMobile = false }: Props) => {
   return (
-    <Image
-      src="/logo.png"
-      width={isMobile ? "138" : "187"}
-      height={isMobile ? "41" : "61"}
-      alt="Logo"
-      priority
-    />
+    <Link href="/">
+      <Image
+        src="/logo.png"
+        width={isMobile ? "138" : "187"}
+        height={isMobile ? "41" : "61"}
+        alt="Logo"
+        priority
+      />
+    </Link>
   )
 }
