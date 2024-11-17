@@ -19,7 +19,7 @@ export const Header = () => {
   const isPc = useMediaQuery(theme.breakpoints.up("md"))
 
   const PC = () => (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box pb={11} sx={{ flexGrow: 1 }}>
       <AppBar
         position="fixed"
         sx={{
@@ -39,7 +39,7 @@ export const Header = () => {
   )
 
   const SP = () => (
-    <>
+    <Box pb={9}>
       <Accordion
         sx={{
           backgroundColor: colors.header.background,
@@ -61,7 +61,7 @@ export const Header = () => {
           <SPMenuList />
         </AccordionDetails>
       </Accordion>
-    </>
+    </Box>
   )
 
   return isPc ? <PC /> : <SP />
