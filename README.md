@@ -1,18 +1,18 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+## This Project is:
+A Portfolio building project by using Next.js, Tailwind CSS, MUI.
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm i --force
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+Due to an issue, it is necessary to use the --force flag when running npm install.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -23,6 +23,17 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Figma Design Specification
+### Font & Colors
+<img src="docs/specifications/FontAndColor.png" alt="font&color" />
+
+### Main Structure(Header & Footer)
+**PC**  
+<img src="docs/specifications/Header/PCHeader.png" />  
+  
+**SP**  
+<img src="docs/specifications/Header/SPHeader.png" />
 
 ## Learn More
 
