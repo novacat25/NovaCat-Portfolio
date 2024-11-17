@@ -3,6 +3,8 @@ import { Box } from "@mui/material"
 import React from "react"
 
 export const PCMenuList = () => {
+  //TODO: code is not pretty
+
   return (
     <Box display="flex" gap={2}>
       <HeaderButton toPage="About" />

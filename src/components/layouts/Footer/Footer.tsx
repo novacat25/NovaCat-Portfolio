@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography } from "@mui/material"
+import { Box, IconButton, Typography, useTheme } from "@mui/material"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import React from "react"
 import Link from "next/link"
@@ -6,7 +6,8 @@ import { colors } from "@/styles/colors"
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 export const Footer = () => {
-  const matches = useMediaQuery('(min-width:600px)')
+  const theme = useTheme()
+  const isPc = useMediaQuery(theme.breakpoints.up('md'))
   
   const PC = () => (
     <div className="max-lg:hidden">
@@ -54,10 +55,5 @@ export const Footer = () => {
     </div>
   )
 
-  return (
-    <>      
-      <SP />
-      <PC />
-    </>
-  )
+  return (isPc ? <PC /> : <SP />)
 }

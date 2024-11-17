@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="h-dvh">
+    <div className="bg-slate-200">
       An empty page.
     </div>
   )

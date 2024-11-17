@@ -11,8 +11,8 @@ export const Logo = ({ isMobile = false }: Props) => {
     <Link href="/">
       <Image
         src="/logo.png"
-        width={isMobile ? "138" : "187"}
-        height={isMobile ? "41" : "61"}
+        width={isMobile ? 138 : 187}
+        height={isMobile ? 41 : 61}
         alt="Logo"
         priority
       />
