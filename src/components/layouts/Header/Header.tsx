@@ -58,7 +58,7 @@ export const Header = () => {
         >
           <Logo isMobile />
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ display: 'inline-block' }}>
           <SPMenuList />
         </AccordionDetails>
       </Accordion>
