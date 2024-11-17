@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: Inter, sans-serif;
+}
+
+.MuiTypography-root {
+  font-family: Inter, sans-serif;
+}
+
 img {
   max-width: none;
 }
