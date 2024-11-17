@@ -8,7 +8,7 @@ type Props = {
 export const SPMenuListItem = ({ toPage }: Props) => {
   return (
     <Link href={`${toPage?.toLowerCase()}`}>
-        <Typography>{toPage}</Typography>
+        <Typography component="span">{toPage}</Typography>
     </Link>
   )
 }
