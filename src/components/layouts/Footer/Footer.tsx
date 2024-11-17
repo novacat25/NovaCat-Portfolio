@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography } from "@mui/material"
+import { Box, IconButton, Typography, useTheme } from "@mui/material"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import React from "react"
 import Link from "next/link"
@@ -6,7 +6,8 @@ import { colors } from "@/styles/colors"
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 export const Footer = () => {
-  const isPc = useMediaQuery('(min-width:600px)')
+  const theme = useTheme()
+  const isPc = useMediaQuery(theme.breakpoints.up('md'))
   
   const PC = () => (
     <div className="max-lg:hidden">
@@ -49,7 +50,7 @@ export const Footer = () => {
             <GitHubIcon />
           </Link>
         </IconButton>
-        <Typography fontSize="12px">© NovaCat 2025 All rights reserved.</Typography>
+        <Typography fontSize="12px">© NovaCat 2024 All rights reserved.</Typography>
       </Box>
     </div>
   )
