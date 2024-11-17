@@ -42,6 +42,7 @@ export const Header = () => {
     <Box pb={9}>
       <Accordion
         sx={{
+          zIndex: 999,
           backgroundColor: colors.header.background,
           position: "fixed",
           width: "100%",
