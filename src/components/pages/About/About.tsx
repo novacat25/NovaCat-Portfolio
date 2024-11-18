@@ -1,6 +1,5 @@
 import { useMediaQuery, useTheme } from "@mui/material"
-import { PCAboutPage } from "./PC/PCAboutPage"
-import { SPAboutPage } from "./SP/SPAboutPage"
+import { PCAboutPage, SPAboutPage } from "@/components/pages/directories/about"
 
 export const AboutPage = () => {
     const theme = useTheme()

@@ -12,6 +12,9 @@ export const PCAboutPage = () => {
           <Subtitle1Typography colorType="introduce">Hello!<br />My Name is NovaCat.</Subtitle1Typography>
           <Subtitle2Typography color={colors.primary.secondary}>Web Engineer・Developer</Subtitle2Typography>
           <H3Typography color={colors.primary.secondary}>FrontEnd Engineer・UI/UX enthusiast</H3Typography>
+          <Box py={4}>
+            Textbox here!
+          </Box>  
           <AboutIntroduceMyselfCard />
         </Box>
       </Box>
