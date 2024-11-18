@@ -8,7 +8,7 @@ import {
 } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
 import React, { useState } from "react"
-import { SPMenuList } from "@/components/molecules/MenuList"
+import { SPMenuList } from "@/components/molecules/MenuList/SPMenuList"
 
 export const SPHeaderLayout = () => {
   const [expanded, setExpanded] = useState(false)
