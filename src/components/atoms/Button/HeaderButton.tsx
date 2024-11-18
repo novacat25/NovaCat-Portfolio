@@ -1,23 +1,15 @@
 import { colors } from "@/styles/colors"
-import { PageCategory } from "@/types/page_category"
 import { Button as MButton, Typography } from "@mui/material"
-import { useRouter } from "next/navigation"
 
 type Props = {
-  toPage: PageCategory
+  toPage?: "About" | "Experiences" | "Projects" | "Blog" | "History" | "Contact"
 }
 
 export const HeaderButton = ({ toPage }: Props) => {
-  const router = useRouter()
-
-  const handleClick = (page: PageCategory) => {
-    router.push(`${page.toLowerCase()}`)
-  }
-
   return (
     <MButton
       color="inherit"
-      onClick={()=>handleClick(toPage)}
+      href={`${toPage?.toLowerCase()}`}
       sx={{
         textTransform: "none",
       }}

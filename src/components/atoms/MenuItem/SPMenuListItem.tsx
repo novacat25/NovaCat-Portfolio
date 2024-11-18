@@ -1,10 +1,9 @@
-import { PageCategory } from '@/types/page_category'
 import { Typography } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
 
 type Props = {
-    toPage: PageCategory
+    toPage?: "About" | "Experiences" | "Projects" | "Blog" | "History" | "Contact"
 }
 export const SPMenuListItem = ({ toPage }: Props) => {
   return (

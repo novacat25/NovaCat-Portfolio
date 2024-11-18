@@ -1,9 +1,7 @@
-import { IntroducePage } from "@/components/pages/Introduce"
-
 export default function Home() {
   return (
-    <>
-      <IntroducePage />
-    </>
+    <div className="bg-slate-200">
+      An empty page.
+    </div>
   )
 }
