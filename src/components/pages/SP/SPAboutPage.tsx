@@ -1,14 +1,18 @@
-import { TitleTypography, H3Typography } from "@/components/atoms/Typography"
+import { H4Typography, P3Typography } from "@/components/atoms/Typography"
+import { AboutIntroduceMyselfCard } from "@/components/organisms/About"
 import { colors } from "@/styles/colors"
 import { Paper, Skeleton, Stack } from "@mui/material"
 
 export const SPAboutPage = () => {
   return (
-    <Paper elevation={0} sx={{ backgroundColor: colors.background.main, p: 2 }}>
+    <Paper elevation={0} sx={{ backgroundColor: colors.background.main, px: 2, pt: 2, pb: 6 }}>
       <Stack alignItems='center'>
-        <Skeleton variant="circular" width={327} height={327} />
-        <TitleTypography colorType="introduce" isMobile>I'm NovaCat.</TitleTypography>
-        <H3Typography mt={-1} colorType="introduce">Web Engineer・Developer</H3Typography>
+        <Skeleton variant="circular" width={218} height={218} />
+        <Stack alignItems="center" pt={2.5}>
+          <H4Typography isStrong colorType="introduce" textAlign="center">Hello!<br />My Name is NovaCat.</H4Typography>
+          <P3Typography color={colors.primary.secondary}>Web Engineer・Developer</P3Typography>
+        </Stack>
+        <AboutIntroduceMyselfCard />
       </Stack>
     </Paper>
 )

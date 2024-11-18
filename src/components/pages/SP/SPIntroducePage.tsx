@@ -5,7 +5,7 @@ import { Box, Paper, Skeleton, Stack } from "@mui/material"
 
 export const SPIntroducePage = () => {
   return (
-    <Paper elevation={0} sx={{ backgroundColor: colors.background.main, p: 2 }}>
+    <Paper elevation={0} sx={{ backgroundColor: colors.background.main, px: 2, py: 2, pb: 6 }}>
       <Stack alignItems='center'>
         <Skeleton variant="circular" width={327} height={327} />
         <TitleTypography colorType="introduce" isMobile>I'm NovaCat.</TitleTypography>
