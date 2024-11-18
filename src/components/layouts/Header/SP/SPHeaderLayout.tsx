@@ -27,18 +27,24 @@ export const SPHeaderLayout = () => {
           position: "fixed",
           width: "100%",
           boxShadow: 3,
+          pointerEvents: "none"
         }}
       >
         <AccordionSummary
           expandIcon={
-            <MenuIcon fontSize="large" sx={{ color: colors.header.main }} />
+            <MenuIcon fontSize="large" sx={{ color: colors.header.main, pointerEvents: "auto" }} />
           }
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Logo isMobile />
+        <Box sx={{ pointerEvents: "auto" }}>
+          <Logo onClick={(e)=>{
+            if(!expanded) e.stopPropagation()
+            handleClose()
+          }} isMobile />
+        </Box>
         </AccordionSummary>
-        <AccordionDetails sx={{ display: 'inline-block' }}>
+        <AccordionDetails sx={{ display: 'inline-block', pointerEvents: "auto" }}>
           <SPMenuList onClick={handleClose} />
         </AccordionDetails>
       </Accordion>

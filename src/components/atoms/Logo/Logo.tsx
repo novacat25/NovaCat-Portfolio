@@ -5,13 +5,15 @@ import React from "react"
 
 type Props = {
   isMobile?: boolean
+  onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>)=>void
 }
 
-export const Logo = ({ isMobile = false }: Props) => {
+export const Logo = ({ isMobile = false, onClick }: Props) => {
   
   return (
     <Link href="/">
       <Image
+        onClick={onClick}
         src={isMobile ? "/logo_sp.png" : "/logo_pc.png"}
         width={isMobile ? LOGO_WIDTH_SP : LOGO_WIDTH_PC}
         height={isMobile ? LOGO_HEIGHT_SP : LOGO_HEIGHT_PC}
