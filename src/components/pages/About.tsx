@@ -4,7 +4,7 @@ import { SPAboutPage } from "./SP/SPAboutPage"
 
 export const AboutPage = () => {
     const theme = useTheme()
-    const isPc = useMediaQuery(theme.breakpoints.up('md'))
+    const isPC = useMediaQuery(theme.breakpoints.up('md'))
 
-  return isPc? <PCAboutPage /> : <SPAboutPage />
+  return isPC? <PCAboutPage /> : <SPAboutPage />
 }

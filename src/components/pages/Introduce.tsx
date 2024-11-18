@@ -4,7 +4,7 @@ import { SPIntroducePage } from "./SP/SPIntroducePage"
 
 export const IntroducePage = () => {
   const theme = useTheme()
-  const isPc = useMediaQuery(theme.breakpoints.up('md'))
+  const isPC = useMediaQuery(theme.breakpoints.up('md'))
 
-return isPc? <PCIntroducePage /> : <SPIntroducePage />
+return isPC? <PCIntroducePage /> : <SPIntroducePage />
 }

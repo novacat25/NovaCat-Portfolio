@@ -8,7 +8,7 @@ import { SPHeaderLayout } from "./SP/SPHeaderLayout"
 
 export const Header = () => {
   const theme = useTheme()
-  const isPc = useMediaQuery(theme.breakpoints.up("md"))
+  const isPC = useMediaQuery(theme.breakpoints.up("md"))
 
-  return isPc ? <PCHeaderLayout /> : <SPHeaderLayout />
+  return isPC ? <PCHeaderLayout /> : <SPHeaderLayout />
 }
