@@ -5,10 +5,12 @@ import React from "react"
 
 interface Props extends TypographyProps {
     colorType?: "plainText" | "introduce" 
+    isMobile?: boolean
 }
 
 export const TitleTypography = ({
   colorType = "plainText",
+  isMobile = false,
   children,
   ...others
 }: Props) => {
@@ -16,7 +18,7 @@ export const TitleTypography = ({
   return (
     <MuiTypography
       fontWeight={700}
-      fontSize={120}
+      fontSize={isMobile ? 48 : 108}
       color={fontColor}
       {...others}
     >
