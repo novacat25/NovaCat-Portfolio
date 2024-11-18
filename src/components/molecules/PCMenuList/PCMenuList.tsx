@@ -1,18 +1,18 @@
 import { HeaderButton } from '@/components/atoms/Button'
+import { PagesArray } from '@/constants/page'
 import { Box } from "@mui/material"
-import React from "react"
+import React, { Fragment } from "react"
 
 export const PCMenuList = () => {
-  //TODO: code is not pretty
-
   return (
     <Box display="flex" gap={2}>
-      <HeaderButton toPage="About" />
-      <HeaderButton toPage="Experiences" />
-      <HeaderButton toPage="Projects" />
-      <HeaderButton toPage="Blog" />
-      <HeaderButton toPage="History" />
-      <HeaderButton toPage="Contact" />
+      {
+        PagesArray.map((page) => (
+          <Fragment key={page.id}>
+            <HeaderButton toPage={page.name} />
+          </Fragment>
+        ))
+      }
     </Box>
   )
 }
