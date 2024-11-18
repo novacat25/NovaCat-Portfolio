@@ -1,5 +1,4 @@
-import { IconLinkButton } from "@/components/atoms/Button"
-import { TitleTypography, Subtitle2Typography } from "@/components/atoms/Typography"
+import { IntroduceButtonGroup, IntroduceSentence } from "@/components/organisms/Introduce"
 import { INTRODUCE_PC } from "@/constants/image_size"
 import { colors } from "@/styles/colors"
 import { Box, Paper, Skeleton } from "@mui/material"
@@ -10,12 +9,8 @@ export const PCIntroducePage = () => {
       <Box display="flex" alignItems="center" gap={4.5}>
         <Skeleton variant="circular" width={INTRODUCE_PC} height={INTRODUCE_PC} />
         <Box>
-          <TitleTypography colorType="introduce">I'm NovaCat.</TitleTypography>
-          <Subtitle2Typography mt={-3} colorType="introduce">Web Engineer・Developer</Subtitle2Typography>
-          <Box pt={2} display="flex" gap={2}>
-            <IconLinkButton type="About" />
-            <IconLinkButton type="Contact" />
-          </Box>
+          <IntroduceSentence />
+          <IntroduceButtonGroup />
         </Box>
       </Box>
     </Paper>

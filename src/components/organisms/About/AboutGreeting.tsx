@@ -1,6 +1,5 @@
-import { H3Typography, Subtitle1Typography, Subtitle2Typography } from "@/components/atoms/Typography"
+import { Subtitle1Typography, Subtitle2Typography, H3Typography, H4Typography, P3Typography } from "@/components/atoms/Typography"
 import { colors } from "@/styles/colors"
-import { H4Typography, P3Typography } from "@/components/atoms/Typography"
 import { Stack } from "@mui/material"
 
 type Props = {

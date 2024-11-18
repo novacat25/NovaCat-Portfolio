@@ -1,4 +1,3 @@
-import { H3Typography, Subtitle1Typography, Subtitle2Typography } from "@/components/atoms/Typography"
 import { AboutForum, AboutGreeting, AboutIntroduceMyselfCard } from "@/components/organisms/About"
 import { ABOUT_PC } from "@/constants/image_size"
 import { colors } from "@/styles/colors"
