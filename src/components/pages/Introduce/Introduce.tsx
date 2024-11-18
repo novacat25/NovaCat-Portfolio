@@ -1,5 +1,5 @@
 import { useMediaQuery, useTheme } from "@mui/material"
-import { PCIntroducePage, SPIntroducePage } from "@/components/pages/directories/introduce"
+import { PCIntroducePage, SPIntroducePage } from "@/components/pages/Introduce"
 
 export const IntroducePage = () => {
   const theme = useTheme()
