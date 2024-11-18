@@ -1,5 +1,5 @@
 import { Logo } from "@/components/atoms/Logo"
-import { PCMenuList } from "@/components/molecules/MenuList"
+import { PCMenuList } from "@/components/molecules/MenuList/PCMenuList"
 import { colors } from "@/styles/colors"
 import {
   AppBar,
