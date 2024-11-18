@@ -1,4 +1,4 @@
-import { HeaderButton } from '@/components/atoms/Button'
+import { HeaderButton } from '@/components/atoms/header'
 import { PagesArray } from '@/constants/page'
 import { Box } from "@mui/material"
 import React, { Fragment } from "react"

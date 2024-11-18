@@ -1,7 +1,7 @@
 import { useTheme } from "@mui/material"
 import React from "react"
 import useMediaQuery from '@mui/material/useMediaQuery'
-import { ResponsibleFooterLayout } from "./ResponsibleFooterLayout"
+import { ResponsibleFooterLayout } from "@/components/layouts/Footer"
 
 export const Footer = () => {
   const theme = useTheme()

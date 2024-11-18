@@ -1,4 +1,4 @@
-import { SPMenuListItem } from '@/components/atoms/MenuItem/SPMenuListItem'
+import { SPMenuListItem } from '@/components/atoms/header'
 import { PagesArray } from '@/constants/page'
 import { colors } from '@/styles/colors'
 import { Stack } from "@mui/material"

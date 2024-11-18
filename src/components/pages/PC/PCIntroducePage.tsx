@@ -1,6 +1,5 @@
-import { IconLinkButton } from "@/components/atoms/Button/IconLinkButton"
-import { Subtitle2Typography } from "@/components/atoms/Typography/Subtitle/Subtitle2Typography"
-import { TitleTypography } from "@/components/atoms/Typography/Title/TitleTypography"
+import { IconLinkButton } from "@/components/atoms/Button"
+import { TitleTypography, Subtitle2Typography } from "@/components/atoms/Typography"
 import { colors } from "@/styles/colors"
 import { Box, Paper, Skeleton } from "@mui/material"
 

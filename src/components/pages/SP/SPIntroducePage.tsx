@@ -1,6 +1,5 @@
-import { IconLinkButton } from "@/components/atoms/Button/IconLinkButton"
-import { H3Typography } from "@/components/atoms/Typography/Heading/H3Typography"
-import { TitleTypography } from "@/components/atoms/Typography/Title/TitleTypography"
+import { IconLinkButton } from "@/components/atoms/Button"
+import { TitleTypography, H3Typography } from "@/components/atoms/Typography"
 import { colors } from "@/styles/colors"
 import { Box, Paper, Skeleton, Stack } from "@mui/material"
 

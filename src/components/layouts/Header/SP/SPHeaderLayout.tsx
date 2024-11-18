@@ -1,4 +1,4 @@
-import { Logo } from "@/components/atoms/Logo/Logo"
+import { Logo } from "@/components/atoms/Logo"
 import { colors } from "@/styles/colors"
 import {
   Accordion,
@@ -8,7 +8,7 @@ import {
 } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
 import React from "react"
-import { SPMenuList } from "@/components/molecules/MenuList/SPMenuList/SPMenuList"
+import { SPMenuList } from "@/components/molecules/MenuList"
 
 export const SPHeaderLayout = () => {
   return (
