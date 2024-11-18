@@ -1,10 +1,21 @@
 import { colors } from "@/styles/colors"
-import { Paper } from "@mui/material"
+import { Paper, useMediaQuery, useTheme } from "@mui/material"
 
 export const IntroducePage = () => {
-  return (
-    <Paper elevation={0} sx={{ backgroundColor: colors.background.main, p: 2 }}>
-        An empty page.
+  const theme = useTheme()
+  const isPc = useMediaQuery(theme.breakpoints.up('md'))
+
+  const PC = () => (
+    <Paper elevation={0} sx={{ backgroundColor: colors.background.main, p: 7.5 }}>
+      Introduce page.
     </Paper>
   )
+
+  const SP = () => (
+      <Paper elevation={0} sx={{ backgroundColor: colors.background.main, p: 2 }}>
+        Introduce page.
+      </Paper>
+  )
+
+return isPc? <PC /> : <SP />
 }

@@ -19,6 +19,7 @@ export const colors = {
   background: {
     main: "rgba(255, 251, 253, 0.75)",
     secondary: "#FFFBFD",
+    contrast: "#FFFFFF",
   },
   border: {
     main: "#A4A4A4",
