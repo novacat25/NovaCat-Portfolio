@@ -32,7 +32,7 @@ export const IconLinkButton = ({ type = "About" }: Props) => {
         boxShadow: 0 
       }}
     >
-        <H4Typography isStrong color={isAbout ? colors.mono.white : colors.primary.main} sx={{textTransform: "none"}}>
+        <H4Typography isStrong color={isAbout ? colors.mono.white : colors.primary.main} sx={{ textTransform: "none" }}>
           {DISPLAY_MESSAGE}
         </H4Typography>
     </Button>
