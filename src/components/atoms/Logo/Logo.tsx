@@ -1,4 +1,4 @@
-import { LOGO_HEIGHT_PC, LOGO_HEIGHT_SP, LOGO_STYLE_PC, LOGO_STYLE_SP, LOGO_WIDTH_PC, LOGO_WIDTH_SP } from "@/constants/logo_size"
+import { LOGO_HEIGHT_PC, LOGO_HEIGHT_SP, LOGO_STYLE_PC, LOGO_STYLE_SP, LOGO_WIDTH_PC, LOGO_WIDTH_SP } from "@/constants/size"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
